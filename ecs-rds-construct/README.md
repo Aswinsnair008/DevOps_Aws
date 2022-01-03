@@ -12,8 +12,8 @@ mkdir ecs-rds-construct && cd ecs-rds-construct
 cdk init --language typescript ----//this will initialize the typescript inside the directory we created
 ########################################################################################################################################################          
 
-Note :If facing issues with the dependencies use the following 
-npm i @aws-cdk/aws-rds ----to install particular dependencies showing error
+Note :If facing issues with the dependencies use the following format inatall the dependencies-
+npm i @aws-cdk/aws-rds ----whne dependencies showing error(versions of the dependencies should match else you may get an error when trying to deploy)
 
 #########################################################################################################################################################
 
