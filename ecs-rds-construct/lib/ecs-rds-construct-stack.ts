@@ -84,7 +84,7 @@ export class EcsRdsConstructStack extends cdk.Stack {
     const loadBalancedService = new ecs_patterns.ApplicationLoadBalancedFargateService(this, "FargateService", {
       cluster,
       taskImageOptions: {
-        image: ecs.ContainerImage.fromRegistry('nginx:latest'),
+        image: ecs.ContainerImage.fromRegistry('public.ecr.aws/nginx/nginx:latest'),
         environment: {
           DATABASE_HOST: rdsCluster.attrEndpointAddress,
           DATABASE_NAME: databaseName,
